@@ -7,18 +7,41 @@
 
 **Projeto:** Resgate da SmartWeb
 
-**Equipe:** [Código da equipe]
+**Equipe:** Equipe Prisma
 
 **Integrantes:**
-- [Nome do integrante 1]
-- [Nome do integrante 2]
-- [Nome do integrante 3]
-- [Nome do integrante 4]
+- Giulia Batista
+- Marriton Santos
+- André Simões
+- João Pedro Brasil 
 
 ## Etapa 1 — Diagnóstico inicial
 
-Nesta etapa, registramos os problemas observados
-no site original, antes de modificar o código.
+
+### Problema 01 — Layout não responsivo
+
+**Data:** 12/11/2026
+
+**Categoria:** CSS / Responsividade
+
+**Sintoma observado:**
+Ao testar o site em uma largura de 360 px, observa-se
+que a página não se adapta adequadamente a tela.
+O conteúdo aparece muito reduzido, dificultando
+a leitura dos textos e a navegação.
+
+O problema também foi observado em 768 px,
+quando parte do conteúdo ultrapassou a área
+visível do navegador.
+
+**Evidências:**
+- evidencias/antes/responsividade-360px-antes.png
+- evidencias/antes/responsividade-768px-antes.png
+
+**Situação:** Problema identificado, ainda não corrigido.
+
+**Responsável pelo registro:** André Simões
+
 
 ### Problemas identificados
 
