@@ -15,6 +15,32 @@
 - André Simões
 - João Pedro Brasil 
 
+
+## Reorganização inicial do código — Separação dos arquivos
+
+**Data:** 13/11/2026  
+
+**Categoria:** Refatoração / Organização do código
+
+**Branch utilizada:** `refactor/separar-arquivos`
+
+**Pull Request:** #1
+
+**Situação inicial:** O projeto apresentava a estrutura HTML, as regras CSS e o JavaScript principal juntos em um único arquivo, dificultando a identificação e a manutenção de cada parte do código separadamente.
+
+**Procedimento realizado:** Foram criadas as pastas `css` e `js`, com os arquivos `estilos.css` e `app.js`, respectivamente. As regras CSS e o bloco principal de JavaScript foram transferidos para esses arquivos, preservando o código original. As referências externas foram incluídas no HTML, posteriormente renomeado para `index.html`.
+
+**Verificação:** O projeto foi aberto pelo Live Server, e os arquivos externos foram identificados na aba Network do Chrome, sem erros HTTP de carregamento. Os problemas originais de funcionamento e responsividade permaneceram pendentes de correção.
+
+**Commits:** Três commits específicos de reorganização, incluindo `8f484c8` — `refactor: extrair javascript para arquivo externo`.
+
+**Resultado:** Estrutura inicial reorganizada, permitindo que as próximas intervenções em HTML, CSS e JavaScript sejam desenvolvidas e registradas separadamente.
+
+**Observação:** Esta etapa não corresponde à resolução dos problemas identificados no diagnóstico inicial.
+
+**Responsável pelo registro:** André Simões
+
+
 ## Etapa 1 — Diagnóstico inicial
 
 
