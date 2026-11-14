@@ -91,6 +91,26 @@ visível do navegador.
 
 **Responsável pelo registro:** André Simões
 
+### Problema 02 — Navegação por teclado
+
+**Data:** 13/11/2026
+
+**Categoria:** Acessibilidade
+
+**Sintoma observado:**
+Durante o teste utilizando apenas Tab, Shift+Tab, Enter 
+e Espaço, não foi possível identificar visualmente o 
+foco nos elementos da página. A navegação percebida 
+ocorreu apenas na barra de ferramentas do navegador.
+
+**Evidências:** 
+Teste manual realizado utilizando 
+apenas o teclado, conforme as orientações do roteiro.
+
+**Situação:** Problema identificado, ainda não corrigido. 
+
+**Responsável pelo registro:** Giulia Batista
+
 
 ### Problemas identificados
 
