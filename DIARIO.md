@@ -43,6 +43,29 @@
 
 ## Etapa 1 — Diagnóstico inicial
 
+### Diagnóstico — Auditoria de acessibilidade com Lighthouse
+
+**Data:** 13/11/2026
+
+**Ferramenta:** Google Chrome — Lighthouse
+
+**Página analisada:** `index.html`, executada pelo Live Server.
+
+**Resultados obtidos:**
+- Performance: 100
+- Acessibilidade: 44
+- Boas práticas: 92
+- SEO: 82
+
+**Problemas identificados:** A auditoria apontou imagens sem atributo `alt` e combinações de cores de texto e fundo com contraste insuficiente. Esses problemas dificultam o acesso às informações, especialmente para pessoas que utilizam leitores de tela ou apresentam dificuldades de percepção visual.
+
+**Situação:** Problemas identificados e ainda não corrigidos nesta etapa.
+
+**Meta:** Alcançar pelo menos 90 pontos em acessibilidade, conforme exigência do roteiro.
+
+**Evidência:** Captura de tela do Lighthouse realizada em 13/11/2026.
+
+**Responsável pelo registro:** Giulia Batista
 
 ### Problema 01 — Layout não responsivo
 
