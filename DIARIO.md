@@ -57,7 +57,7 @@
 - Boas práticas: 92
 - SEO: 82
 
-**Problemas identificados:** A auditoria apontou imagens sem atributo `alt` e combinações de cores de texto e fundo com contraste insuficiente. Esses problemas dificultam o acesso às informações, especialmente para pessoas que utilizam leitores de tela ou apresentam dificuldades de percepção visual.
+**Problemas identificados:** A auditoria apontou imagens sem atributo `alt` e combinações de cores de texto e fundo com contraste insuficiente e ausência de declaração do idioma principal da página (lang). Esses problemas dificultam o acesso às informações, especialmente para pessoas que utilizam leitores de tela ou apresentam dificuldades de percepção visual. 
 
 **Situação:** Problemas identificados e ainda não corrigidos nesta etapa.
 
@@ -116,9 +116,10 @@ apenas o teclado, conforme as orientações do roteiro.
 
 | Nº | Data | Categoria | Sintoma observado |
 |---|---|---|---|
-| 01 | | | |
-| 02 | | | |
-| 03 | | | |
+| 01 | 12/11 | CSS | Em 360 px a página aparece reduzida, dificultando a leitura e a navegação. Em 768 px, parte do conteúdo ultrapassa a área visível do navegador. |
+| 02 | 13/11 | Acessibilidade | Durante o teste com teclado, não foi possível identificar visualmente o foco nos elementos da página. |
+| 03 | 13/11 | Acessibilidade | O Lighthouse identificou baixo contraste entre o texto e o plano de fundo. |
+| 04 | 13/11 | HTML | Foram identificadas imagens sem atributo alt e ausência de declaração do idioma principal da página (lang).|
 
 ### Reflexão sobre a experiência de uso
 
