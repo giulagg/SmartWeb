@@ -184,4 +184,4 @@ responsável: giulia
 
 responsável pelo registro: Marriton
 
-
+registro de correção: na linha "if (email.indexOf("@") === -1) {"  o = está atribuindo, e o JavaScript não aceita atribuir a email.indexOf(...), então o arquivo inteiro nem é lido. pra corrigir sera feita o uso de comparação escrita, corrigindo ficaria "if (email.indexOf("@") === -1) {" 
