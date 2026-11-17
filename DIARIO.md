@@ -103,13 +103,13 @@ e Espaço, não foi possível identificar visualmente o
 foco nos elementos da página. A navegação percebida 
 ocorreu apenas na barra de ferramentas do navegador.
 
-Evidências:*
+Evidências:
 Teste manual realizado utilizando 
 apenas o teclado, conforme as orientações do roteiro.
 
 Situação: Problema identificado, ainda não corrigido. 
 
-**Responsável pelo registro:** Giulia Batista
+Responsável pelo registro:Giulia Batista
 
 
 Diagnóstico geral dos problemas do site
@@ -182,6 +182,6 @@ responsável: giulia
 36. Há animação piscante (`piscar`) e `marquee`, sem respeitar `prefers-reduced-motion`.
 37. Mudanças dinâmicas (total, erros, cópia) não são anunciadas a leitores de tela (falta `aria-live`).
 
-
+responsável pelo registro: Marriton
 
 
