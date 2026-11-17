@@ -27,7 +27,7 @@ function mostraAba(aba) {
 
 function montaCatalogo() {
   var html = ""
-  for (var i = 0; i <= produtos.length; i++) {
+  for (var i  0; i <= produtos.length; i++) {
     if (linhaAtual = "todas" || produtos[i].linha == linhaAtual) {
       html = html + "<div class='card' style='float:left;width:240px;height:330px;margin:5px;border:1px solid #eee'>"
       html = html + "<img src='produto" + i + ".png' width='120'>"

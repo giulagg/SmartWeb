@@ -111,6 +111,51 @@ Situação: Problema identificado, ainda não corrigido.
 
 Responsável pelo registro:Giulia Batista
 
+### Problema 02 — Acesso a índice inexistente durante a montagem do catálogo
+
+**Data:** 16/11/2026
+
+**Categoria:** JavaScript / Estruturas de repetição e manipulação de arrays
+
+**Sintoma observado:**
+
+Durante a tentativa de carregar o catálogo de produtos da SmartWeb, a execução do JavaScript era interrompida por um erro relacionado ao acesso à propriedade `sku` de um valor `undefined`. Como consequência, a função responsável pela montagem do catálogo não concluía sua execução.
+
+**Causa encontrada:**
+
+Na função `montaCatalogo()`, localizada no arquivo `js/app.js`, o laço de repetição utilizava a condição `i <= produtos.length`.
+
+O array `produtos` contém 12 elementos, organizados em índices que vão de 0 a 11. Entretanto, o operador `<=` permitia que a variável `i` alcançasse o valor 12, ultrapassando o último índice válido.
+
+Ao tentar acessar `produtos[12].sku`, o código encontrava um elemento inexistente (`undefined`), provocando a interrupção da execução.
+
+**Correção realizada:**
+
+A condição do laço foi alterada de:
+
+`i <= produtos.length`
+
+para:
+
+`i < produtos.length`
+
+Com essa modificação, a repetição fica limitada aos índices existentes no array, impedindo a tentativa de acessar um produto inexistente.
+
+A intervenção foi restrita a essa condição, preservando as demais instruções da função para que os outros problemas identificados possam ser corrigidos e testados separadamente.
+
+**Verificação do resultado:**
+
+Após salvar a alteração, a página deverá ser recarregada pelo Live Server, com o Console do Chrome DevTools aberto, para verificar se o erro relacionado ao acesso à propriedade `sku` deixa de ocorrer.
+
+Essa correção resolve o limite inadequado do laço, mas não garante, isoladamente, o funcionamento completo do catálogo, pois outras inconsistências ainda foram identificadas na função.
+
+**Fundamentação:** Unidade 6 da apostila — JavaScript, estruturas de repetição e arrays.
+
+**Situação:** Correção pontual proposta; validação no navegador pendente de confirmação.
+
+**Responsável:** André Simões
+
+**Commit previsto:** `fix: corrigir limite do laco do catalogo`
 
 Diagnóstico geral dos problemas do site
 
