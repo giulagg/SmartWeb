@@ -63,7 +63,9 @@ Situação: Problemas identificados e ainda não corrigidos nesta etapa.
 
 Meta: Alcançar pelo menos 90 pontos em acessibilidade, conforme exigência do roteiro.
 
-Evidência: Captura de tela do Lighthouse realizada em 13/11/2026.
+Evidência: 
+Captura de tela do Lighthouse realizada em 13/11/2026.
+- evidencias/antes/Lighthouse-antes.png
 
 Responsável pelo registro: Giulia Batista
 
@@ -109,7 +111,7 @@ apenas o teclado, conforme as orientações do roteiro.
 
 Situação: Problema identificado, ainda não corrigido. 
 
-Responsável pelo registro:Giulia Batista
+Responsável pelo registro: Giulia Batista
 
 ### Problema 02 — Acesso a índice inexistente durante a montagem do catálogo
 
@@ -157,9 +159,24 @@ Essa correção resolve o limite inadequado do laço, mas não garante, isoladam
 
 **Commit previsto:** `fix: corrigir limite do laco do catalogo`
 
+### Validação HTML pelo W3C
+
+Data: 15/11/2026
+
+Foi realizada a validação do código HTML da versão original do projeto por meio do W3C Markup Validation Service, com o objetivo de identificar problemas na estrutura e na marcação do documento.
+O resultado apresentou **23 erros e 23 avisos**, incluindo problemas como ausência da declaração DOCTYPE, imagens sem atributo `alt`, utilização de elementos e atributos obsoletos, identificadores duplicados e problemas na hierarquia dos títulos.
+Os resultados foram registrados por meio de uma captura de tela, utilizada como evidência do estado inicial do código.
+
+**Evidência:**
+- evidencias/antes/validacao-w3c-original-antes.png — resultado da validação HTML da versão original.
+
+Situação: Problema identificado, ainda não corrigido. 
+
+Responsável pelo registro: Giulia Batista
+
 Diagnóstico geral dos problemas do site
 
-data:17/11/2026 
+Data: 17/11/2026
 
 Ao analisar o arquivo `smartwebinformatica-desafio.html`, a equipe percebeu que os problemas se espalham por todas as camadas do projeto: o JavaScript quebra ao carregar a página, a estrutura HTML ignora a semântica e as regras de acessibilidade, e o CSS é rígido, não responsivo e com baixo contraste. Para organizar o trabalho, os problemas foram divididos por categoria (JavaScript, HTML, CSS e Acessibilidade, seguindo a classificação do roteiro) e distribuídos entre os integrantes por área de responsabilidade. Dentro do JavaScript, a minha parte ficou com os erros de sintaxe e variáveis, o carregamento do catálogo, a busca de produtos, os filtros por linha e a organização dos dados dos produtos. Cada problema foi registrado no Diário de Bordo com sintoma, causa, seção da apostila e commit próprio.
 
