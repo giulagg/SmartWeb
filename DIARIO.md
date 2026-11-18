@@ -178,6 +178,39 @@ Diagnóstico geral dos problemas do site
 
 Data: 17/11/2026
 
+
+### Problema — Ausência da declaração DOCTYPE no documento HTML
+
+Data: 18/11/2026
+
+Categoria: HTML5 / Estrutura do documento
+
+Sintoma observado:
+
+Na análise do código original da SmartWeb, foi identificada a ausência da declaração `<!DOCTYPE html>` no início do documento. Essa ausência faz com que o navegador utilize o modo de compatibilidade (*quirks mode*), no qual determinados elementos e propriedades de estilo podem ser interpretados de acordo com comportamentos antigos.
+
+Causa encontrada:
+
+O arquivo `index.html` não apresentava a declaração que identifica o documento como HTML5. A estrutura iniciava diretamente com o comentário do desafio, sem indicar explicitamente ao navegador o padrão a ser utilizado.
+
+Correção realizada:
+
+Foi inserida a declaração `<!DOCTYPE html>` na primeira linha do arquivo, antes do comentário original, sem modificar os demais elementos da página.
+
+A intervenção foi limitada à estrutura inicial do documento, preservando o conteúdo institucional, as funcionalidades e as demais marcações existentes.
+
+Verificação do resultado:
+
+A confirmar após a execução de `document.compatMode` no Console do Chrome e nova validação no Nu HTML Checker.
+
+Situação: Correção pontual realizada; validação pendente.
+
+Responsável: André Simões
+
+Branch usada: 'fix/html'
+
+
+
 Ao analisar o arquivo `smartwebinformatica-desafio.html`, a equipe percebeu que os problemas se espalham por todas as camadas do projeto: o JavaScript quebra ao carregar a página, a estrutura HTML ignora a semântica e as regras de acessibilidade, e o CSS é rígido, não responsivo e com baixo contraste. Para organizar o trabalho, os problemas foram divididos por categoria (JavaScript, HTML, CSS e Acessibilidade, seguindo a classificação do roteiro) e distribuídos entre os integrantes por área de responsabilidade. Dentro do JavaScript, a minha parte ficou com os erros de sintaxe e variáveis, o carregamento do catálogo, a busca de produtos, os filtros por linha e a organização dos dados dos produtos. Cada problema foi registrado no Diário de Bordo com sintoma, causa, seção da apostila e commit próprio.
 
 Problemas identificados, por categoria:
